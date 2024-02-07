@@ -71,14 +71,6 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
-
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
-      }
     </style>
 
     
@@ -108,7 +100,7 @@
       <h2 style="font-family: Londrina Solid, sans-serif; text-decoration:underline" class= "">SIGN UP</h2>
     </div>
       <div class="col-md-7 col-lg-8 position-absolute top-50 start-50 translate-middle">
-        <form method = 'POST' class="needs-validation" novalidate>
+        <form method ='POST' class="needs-validation" novalidate>
           <div class="row g-3">
             <div class="col-6 col-sm-3">
               <label style="color: white; font-family: Inter Tight, sans-serif;" for="firstName" class="form-label">first name</label>
@@ -139,21 +131,9 @@
 
             <div class="col-12">
               <label style= "color: white; font-family: Inter Tight, sans-serif;" for="address" class="form-label">password</label>
-              <input type="password" class="form-control" id="password" required>
-              <div class="invalid-feedback">
-                Please enter your shipping address.
+              <input type="password" class="form-control" id="password" name="password" required>
               </div>
-              </div>
-            <div class="col-12">
-              <label style="color: white; font-family: Inter Tight, sans-serif;" for="email" class="form-label">email <span class="text-body-secondary"></span></label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
-              <div class="invalid-feedback">
-                Please enter a valid email address.
-              </div>
-            </div>
-            </div>
 
-           
           <hr class="my-4">
 
           <button class="w-100 btn btn-primary btn-lg" type="submit">sign up!</button>
@@ -164,6 +144,5 @@
 </div>
 <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <script src="checkout.js"></script></body>
 </html>
 
