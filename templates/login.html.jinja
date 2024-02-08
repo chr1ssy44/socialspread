@@ -71,12 +71,18 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+      body {
+    background-color: #FFFFFF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23FFFFFF' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23fff7e0' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23fff0c2' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23ffe8a3' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23ffe185' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23FFD966' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    }
     </style>
 
     
     <!-- Custom styles for this template -->
   </head>
-  <body style="background-color: #14213d;">
+  <body >
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -95,13 +101,13 @@
 
 
 <div class="container">
-  <main style="color: white;">
+  <main style="color: #fca311;">
       <h2 style="font-family: Londrina Solid, sans-serif; text-decoration:underline" class= "">LOGIN</h2>
     </div>
       <div class="col-md-7 col-lg-8 position-absolute top-50 start-50 translate-middle">
       <form method='POST'>
             <div class="col-12">
-              <label style="color: white; font-family: Inter Tight, sans-serif;" for="username" class="form-label">username</label>
+              <label style="color: #fca311; font-family: Inter Tight, sans-serif;" for="username" class="form-label">username</label>
               <div class="input-group has-validation">
                 <span class="input-group-text">@</span>
                 <input type="text" class="form-control" id="username" name="username" required>
@@ -109,7 +115,7 @@
             </div>
 
             <div class="col-12">
-              <label style= "color: white; font-family: Inter Tight, sans-serif;" for="address" class="form-label">password</label>
+              <label style= "color: #fca311; font-family: Inter Tight, sans-serif;" for="address" class="form-label">password</label>
               <input type="password" class="form-control" id="password" name="password" required>
               </div>
 

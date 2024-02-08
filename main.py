@@ -52,7 +52,9 @@ conn = pymysql.connect(
 
 @app.route('/')
 def index():
-
+    if flask_login.current_user.is_authenticated:
+        return redirect('/feed')
+    
     return render_template('home.html.jinja')
 
 @app.route('/registration', methods = ['GET','POST'])
@@ -96,7 +98,8 @@ def login():
 @app.route('/feed', methods = ['GET', 'POST'])
 @flask_login.login_required
 def post_feed():
-
     return render_template('feed.html.jinja')
+
+    return flask_login.current_user
 
  

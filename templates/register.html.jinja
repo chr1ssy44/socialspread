@@ -71,6 +71,12 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+    body {
+    background-color: #FFFFFF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23FFFFFF' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23fff7e0' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23fff0c2' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23ffe8a3' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23ffe185' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23FFD966' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    }
     </style>
 
     
@@ -96,14 +102,14 @@
 
 
 <div class="container">
-  <main style="color: white;">
+  <main style="color: #fca311;">
       <h2 style="font-family: Londrina Solid, sans-serif; text-decoration:underline" class= "">SIGN UP</h2>
     </div>
       <div class="col-md-7 col-lg-8 position-absolute top-50 start-50 translate-middle">
         <form method ='POST' class="needs-validation" novalidate>
           <div class="row g-3">
             <div class="col-6 col-sm-3">
-              <label style="color: white; font-family: Inter Tight, sans-serif;" for="firstName" class="form-label">first name</label>
+              <label style="color: #fca311; font-family: Inter Tight, sans-serif;" for="firstName" class="form-label">first name</label>
               <input type="text" class="form-control" id="firstName" name="first_name" value="" required>
               <div class="invalid-feedback">
                 Valid first name is required.
@@ -111,7 +117,7 @@
             </div>
 
             <div class="col-6 col-sm-3">
-              <label style="color: white; font-family: Inter Tight, sans-serif;" for="lastName" class="form-label">last name</label>
+              <label style="color: #fca311; font-family: Inter Tight, sans-serif;" for="lastName" class="form-label">last name</label>
               <input type="text" class="form-control" id="lastName" name="last_name" value="" required>
               <div class="invalid-feedback">
                 Valid last name is required.
@@ -119,7 +125,7 @@
             </div>
 
             <div class="col-12">
-              <label style="color: white; font-family: Inter Tight, sans-serif;" for="username" class="form-label">username</label>
+              <label style="color: #fca311; font-family: Inter Tight, sans-serif;" for="username" class="form-label">username</label>
               <div class="input-group has-validation">
                 <span class="input-group-text">@</span>
                 <input type="text" class="form-control" id="username" name="username" required>
@@ -130,7 +136,7 @@
             </div>
 
             <div class="col-12">
-              <label style= "color: white; font-family: Inter Tight, sans-serif;" for="address" class="form-label">password</label>
+              <label style= "color:  #fca311; font-family: Inter Tight, sans-serif;" for="address" class="form-label">password</label>
               <input type="password" class="form-control" id="password" name="password" required>
               </div>
 
