@@ -5,7 +5,13 @@
     <title></title>
 </head>
 <body>
-    <h1>hello</h1>
+<ul>
+    {%for post in my_posts %}
+<li>
+    {{ post ['description'] }}
+</li>
+</ul>
+{%endfor%}
 </body>
 
 </html>
