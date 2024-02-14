@@ -95,12 +95,13 @@ def login():
     
     return render_template('login.html.jinja')
 
-posts =['']
+post =['']
 
 @app.route('/feed', methods = ['GET', 'POST'])
 @flask_login.login_required
 def post_feed():
-    return render_template('feed.html.jinja')
+    
+    return render_template('feed.html.jinja', my_posts=post)
 
     return flask_login.current_user
 
