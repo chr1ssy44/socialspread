@@ -47,7 +47,7 @@ def connect_db():
         host="10.100.33.60",
         user="cbeckford2",
         password="227248309",
-        database="cbeckford_socialspread",
+        database="cbeckford2_socialspread",
         cursorclass=pymysql.cursors.DictCursor,
         autocommit=True
     )
@@ -108,17 +108,20 @@ def login():
     
     return render_template('login.html.jinja')
 
-post =['']
 
 @app.route('/feed', methods = ['GET', 'POST'])
 @flask_login.login_required
 def post_feed():
+    cursor = get_db().cursor()
+    cursor.execute(f"SELECT * FROM `posts`")
     
-    return render_template('feed.html.jinja', my_posts=post)
+    results = cursor.fetchall()
+
+    return render_template('feed.html.jinja', my_posts=results)
 
     return flask_login.current_user
 
-@app.route('/post', methods=['POST'])
+@app.route('/posts', methods=['POST'])
 @flask_login.login_required
 def create_post():
     description = request.form['description']

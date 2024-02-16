@@ -5,18 +5,17 @@
     <title></title>
 </head>
 <body>
+<div>
 <ul>
-    {%for post in my_posts %}
+    {%for posts in my_posts %}
 <li>
-    {{ post ['description'] }}
+    {{ posts ['description'] }}
 </li>
-{%endfor%}
-</ul>
-<form method="post">
-        <input name="new_post">
-        <input type="submit" class="btn btn-primary" >
+<form method="POST" action="">
+
 </form>
-    
+{%endfor%} 
+</ul>  
 </body>
 
 </html>
